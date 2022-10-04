@@ -1,0 +1,78 @@
+/**
+  |============================
+  | ЧИМ МИ ЗАЙМАЄМОСЬ
+  |============================
+*/
+.items__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+}
+
+.items__services {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 370px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(47, 48, 58, 0.8);
+}
+
+.main_center {
+    background-color: #FFFFFF;
+    padding-top: 0;
+    display: none;
+    
+        @media screen and (min-width: 1200px) {
+            display: block;
+            padding-top: 47px;
+            padding-bottom: 94px;
+        }
+}
+
+.photo_container .caption {
+    padding-top: 0;
+}
+
+
+.photo_container .items__photos {
+    display: flex;
+}
+
+.items {
+    &__photos {
+            display: flex;
+            position: relative;
+        }
+
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+
+.caption {
+    margin-top: 0;
+    padding-top: 0;
+    padding-top: 94px; 
+    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-text-color);
+}

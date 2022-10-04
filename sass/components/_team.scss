@@ -1,0 +1,172 @@
+/**
+  |============================
+  | КОМАНДА
+  |============================
+*/
+.our-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #F5F4FA;
+}
+
+.social-medias {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    &__social-link {
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            outline: none;
+            background: rgba(255, 255, 255, 0.1);
+            color: #AFB1B8;
+    
+            transition-duration: 250ms;
+            transition-property: color, background-color;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+}
+
+
+
+
+.social-medias__social-link:hover .social-medias__social-icon,
+.social-medias__social-link:focus .social-medias__social-icon {
+    fill: #FFFFFF;
+}
+
+.social-medias__social-link:hover,
+.social-medias__social-link:focus {
+    background-color: #2196F3;
+}
+
+.social-medias__social-media {
+    gap: 10px;
+}
+
+.social-medias__social-icon {
+    fill: currentColor;
+
+    &__social-icon:hover,
+    &__social-icon:focus {
+        background-color: #2196F3;
+    }
+}
+
+
+.social-medias__networks {
+    fill: white;
+
+    transition-duration: 250ms;
+    transition-property: fill;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team {
+    display: block;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.box {
+    text-align: center;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+
+
+
+    &__peoples {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.18;
+            letter-spacing: 0.03em;
+    
+            color: var(--title-text-color);
+    
+            justify-content: center;
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+
+    &__jobs {
+    
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.18;
+    
+            letter-spacing: 0.03em;
+            color: var(--primary-gray-color);
+    
+            justify-content: center;
+            display: flex;
+            margin-bottom: 16px;
+        }
+
+    &__team {
+            box-sizing: border-box;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 4px 4px;
+            background-color: var(--primary-white-color);
+            border-radius: 0px 0px 4px 4px;
+
+            // height: 622px;
+            // width: 450px;
+
+        @media screen and (min-width: 768px) {
+            width: 354px;
+            // height: 536px;
+            flex-wrap: wrap;
+        }
+                
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+            // height: 428px;
+        }
+                
+        &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+                        }
+        }
+
+}
+&__teammates {
+    padding: 30px 32px;
+}
+}
+.box__img {
+    width: 450px;
+
+    @media screen and (min-width:768px) {
+        width: 354px;
+    }
+
+        @media screen and (min-width:1200px) {
+            width: 270px;
+        }
+
+}
