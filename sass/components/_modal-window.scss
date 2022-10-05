@@ -23,19 +23,37 @@
 }
 
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    // transform: translate(-50%, -50%);
 
 
-    width: 528px;
-    height: 581px;
+    max-width: 450px;
+    height: 609px;
     background-color: #FFFFFF;
+    margin-top: 93px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 40px;
 
     box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
     border-radius: 4px;
-    padding: 40px;
+    // padding: 40px;
+
+    @media screen and (min-width:768px) {
+        max-width: unset;
+        width: 450px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scaleY(1);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 528px;
+        height: 581px;
+    }
 }
 
 .btn-modal {

@@ -66,7 +66,12 @@ span {
 .site-nav { 
     display: none;
 
-    
+    @media screen and (min-width: 768px) {
+            display: flex;
+            gap: 50px;
+        }
+
+        
     &__link {
             text-decoration: none;
     
@@ -82,10 +87,6 @@ span {
     display: flex;
 }
 
-
-.site-nav__item {
-    margin-right: 50px;
-}
 
 .site-nav__item:last-child {
     margin-right: 0;
@@ -129,12 +130,6 @@ span {
     color: var(--accent-color);
 }
 
-
-
-
-// .contacts__icon-mail+.contacts__icon-tel {
-//     margin-left: 30px;
-// }
 
 
 .contacts__mail {
