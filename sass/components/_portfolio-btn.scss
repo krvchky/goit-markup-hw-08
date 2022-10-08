@@ -4,10 +4,17 @@
   |============================
 */
 .portfolio {
-    padding-bottom: 94px;
-    padding-top: 94px;
+    padding-bottom: 60px;
+    padding-top: 60px;
     background-color: #FFFFFF;
     flex-wrap: wrap;
+
+    @media screen  and (min-width:1200px) {
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
+
+    
 
     &__btns {
             display: flex;
