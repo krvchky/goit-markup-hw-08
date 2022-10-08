@@ -123,19 +123,32 @@
             <h2 class="caption">Чим ми займаємося</h2>
             <ul class="items" >
                 <li class="items__photos">
-                    <img src="./images/photo.jpg" width="370" alt="Верстка">
+                    <picture>
+                        <source media="(min-width:1200px )" srcset="./images/card/img_lg-card1-@1x.jpg 1x, ./images/card/img_lg-card1-@2x.jpg 2x ">
+                        <img src="./images/card/img_lg-card1-@1x.jpg" width="370" alt="Верстка">
+                    </picture>
                     <div class="items__services">
                        <h3 class="items__title">Десктопные приложения</h3> 
                     </div>
                 </li>
+
                 <li class="items__photos">
-                    <img src="./images/photo2.jpg" width="370" alt="Разметка страницы">
+                    <picture>
+                        <source media="(min-width:1200px )"
+                            srcset="./images/card/img_lg-card2-@1x.jpg 1x, ./images/card/img_lg-card2-@2x.jpg 2x ">
+                        <img src="./images/card/img_lg-card2-@1x.jpg" width="370"  alt="Разметка страницы">
+                    </picture>
                     <div class="items__services">
                         <h3 class="items__title">Мобильные приложения</h3>
                     </div>
                 </li>
+
                 <li class="items__photos">
-                    <img src="./images/photo3.jpg" width="370" alt="Внешнее оформление">
+                    <picture>
+                        <source media="(min-width:1200px )"
+                            srcset="./images/card/img_lg-card3-@1x.jpg 1x, ./images/card/img_lg-card3-@2x.jpg 2x ">
+                        <img src="./images/card/img_lg-card3-@1x.jpg" width="370" alt="Внешнее оформление">
+                    </picture>
                     <div class="items__services">
                         <h3 class="items__title">Дизайнерские решения</h3>
                     </div>
@@ -150,7 +163,16 @@
 
             <ul class="box">
             <li class="box__team">
-                <img class="box__img" src="./images/photo4.jpg"  alt="Чоловік">
+                <picture>
+                    <!-- desktop -->
+                    <source media="(min-width:1200px )"srcset="./images/team/img_i_lg-@1x.jpg 1x, ./images/team/img_i_lg-@2x.jpg 2x">
+                    <!-- tablet -->
+                    <source media="(min-width:768px )" srcset="./images/team/img_i_md-@1x.jpg 1x, ./images/team/img_i_md-@2x.jpg 2x">
+                    <!-- mobile -->
+                    <source media="(max-width:767px )" srcset="./images/team/img_i_sm-@1x.jpg 1x, ./images/team/img_i_sm-@2x.jpg 2x">
+                    <img class="box__img" src="./images/team/img_i_sm-@1x.jpg" alt="Чоловік">
+                </picture>
+                
                 <div class="box__teammates">
                 <h3 class="box__peoples">Игорь Демьяненко</h3>
                 <p class="box__jobs">Product Designer</p>
@@ -190,7 +212,16 @@
    
        
             <li class="box__team">
-                <img class="box__img" src="./images/photo5.jpg"  alt="Жінка">
+                <picture>
+                    <!-- desktop -->
+                    <source media="(min-width:1200px )" srcset="./images/team/img_o_lg-@1x.jpg 1x, ./images/team/img_o_lg-@2x.jpg 2x">
+                    <!-- tablet -->
+                    <source media="(min-width:768px )" srcset="./images/team/img_o_md-@1x.jpg 1x, ./images/team/img_o_md-@2x.jpg 2x">
+                    <!-- mobile -->
+                    <source media="(max-width:767px )" srcset="./images/team/img_o_sm-@1x.jpg 1x, ./images/team/img_o_sm-@2x.jpg 2x">
+                    <img class="box__img" src="./images/team/img_o_sm-@1x.jpg" alt="Жінка">
+                </picture>
+                  
                 <div class="box__teammates">
                 <h3 class="box__peoples">Ольга Репина</h3>
                 <p class="box__jobs">Frontend Developer</p>
@@ -229,7 +260,15 @@
             </li>
        
             <li class="box__team">
-                <img class="box__img" src="./images/photo16.jpg"  alt="Чоловік">
+                <picture>
+                    <!-- desktop -->
+                    <source media="(min-width:1200px )" srcset="./images/team/img_m_lg-@1x.jpg 1x, ./images/team/img_m_lg-@2x.jpg 2x">
+                    <!-- tablet -->
+                    <source media="(min-width:768px )" srcset="./images/team/img_m_md-@1x.jpg 1x, ./images/team/img_m_md-@2x.jpg 2x">
+                    <!-- mobile -->
+                    <source media="(max-width:767px )" srcset="./images/team/img_m_sm-@1x.jpg 1x, ./images/team/img_m_sm-@2x.jpg 2x">
+                    <img class="box__img" src="./images/team/img_m_sm-@1x.jpg" alt="Чоловік">
+                </picture>
                 <div class="box__teammates">
                 <h3 class="box__peoples">Николай Тарасов</h3>
                 <p class="box__jobs">Marketing</p>
@@ -269,7 +308,16 @@
  
 
             <li class="box__team">
-                <img class="box__img" src="./images/photo17.jpg"  alt="Чоловік">
+                <picture>
+                <!-- desktop -->
+                <source media="(min-width:1200px )" srcset="./images/team/img_mux_lg-@1x.jpg 1x, ./images/team/img_mux_lg-@2x.jpg 2x">
+                <!-- tablet -->
+                <source media="(min-width:768px )" srcset="./images/team/img_mux_md-@1x.jpg 1x, ./images/team/img_mux_md-@2x.jpg 2x">
+                <!-- mobile -->
+                <source media="(max-width:767px )" srcset="./images/team/img_mux_sm-@1x.jpg 1x, ./images/team/img_mux_sm-@2x.jpg 2x">
+                <img class="box__img" src="./images/team/img_mux_sm-@1x.jpg" alt="Чоловік">
+                </picture>
+
                 <div class="box__teammates">
                 <h3 class="box__peoples">Михаил Ермаков</h3>
                 <p class="box__jobs">UI Designer</p>
@@ -530,36 +578,28 @@
     </ul>
 
     <ul class="mobile-contacts">
-            <li class="momile-contacts__item">
+            <li class="mobile-contacts__item">
                 <a class="mobile-contacts__link--tel" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
-            <li class="momile-contacts_item">
+            <li class="mobile-contacts_item">
                 <a class="mobile-contacts__link--mail " href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>            
           </ul>
-
-          <ul class="mobile-socials">
-            <li class="mobile-socials__item">
-                <a class="mobile-socials__link" 
-                href="https://instagram.com"
-                aria-label="Instagram">Instagram</a>
-            </li>
-            <li class="mobile-socials__item">
-                <a class="mobile-socials__link" 
-                href="https://twitter.com"
-                aria-label="Twitter">Twitter</a>
-            </li>
-            <li class="mobile-socials__item">
-                <a class="mobile-socials__link" 
-                href="https://facebook.com"
-                aria-label="Facebook">Facebook</a>
-            </li>
-            <li class="mobile-socials__item">
-                <a class="mobile-socials__link" 
-                href="https://linkedin.com"
-                aria-label="Linkedin">Linkedin</a>
-            </li>
-          </ul>
+    
+    <ul class="mobile-socials">
+        <li class="mobile-socials__item">
+            <a class="mobile-socials__link" href="https://instagram.com" aria-label="Instagram">Instagram</a>
+        </li>
+        <li class="mobile-socials__item">
+            <a class="mobile-socials__link" href="https://twitter.com" aria-label="Twitter">Twitter</a>
+        </li>
+        <li class="mobile-socials__item">
+            <a class="mobile-socials__link" href="https://facebook.com" aria-label="Facebook">Facebook</a>
+        </li>
+        <li class="mobile-socials__item">
+            <a class="mobile-socials__link" href="https://linkedin.com" aria-label="Linkedin">Linkedin</a>
+        </li>
+    </ul>
 </div>
 <script src="./js/modal.js"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

@@ -63,6 +63,7 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+
 }
 
 
@@ -75,19 +76,22 @@
 }
 
 .menu-nav__link {
-
     list-style: none;
-    text-decoration: none;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
+        text-decoration: none;
     
-    margin-bottom: 0;
-    color: #212121;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+    
+        margin-bottom: 0;
+        color: #212121;
+}
+
+.menu-nav__link.link-current  {
+    color: #2196F3;
 }
 
 .menu-nav__item {
