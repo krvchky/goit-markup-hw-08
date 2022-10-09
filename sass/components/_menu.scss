@@ -45,6 +45,11 @@
     &.is-open {
             transform: translateX(0);
         }
+
+        @media screen and (min-width:767px) {
+            display: none;
+
+        }
         
 }
 
@@ -69,6 +74,7 @@
 
 .mobile-socials {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .menu-nav {
@@ -141,5 +147,16 @@
     padding: 0 10px 0 10px;
 
     border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-contacts__item:last-child {
+    margin-bottom: 0;
+}
+.mobile-contacts__item {
+    margin-bottom: 32px;
+}
+
+.mobile-socials {
+    margin-top: 64px;
 }
 

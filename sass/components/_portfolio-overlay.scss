@@ -13,16 +13,21 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(100%);
+    transform: translateY(101%);
     width: 100%;
     height: 100%;
     padding: 20px;
     display: flex;
-    align-items: center;
+    
     justify-content: center;
+    overflow: scroll;
 
     background-color: rgba(33, 150, 243, 0.9);
     transition: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width:1200px) {
+        align-items: center;
+    }
 }
 
 .portfolio__photos:hover .portfolio__overlay,

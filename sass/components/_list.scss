@@ -29,6 +29,13 @@
             text-transform: uppercase;
             text-align: center;
             color: var(--title-text-color);
+
+            @media screen and (min-width:768px) {
+                text-align: start;
+            }
+                        @media screen and (min-width:1200px) {
+                            text-align: start;
+                        }
         }
     
         &__paragraph {
@@ -43,9 +50,6 @@
     
         }
 
-    // display: flex;
-    // justify-content: space-between;
-    // gap: 30px;
 
     &__middle {
                 @media screen and (min-width:480px) {
@@ -77,12 +81,7 @@
         flex-wrap: wrap;
         gap: 30px;
     }
-            
-    @media screen and (min-width:1200px) {
-            
-    // flex-wrap: nowrap;
-            
-    }
+
 }
 
 
