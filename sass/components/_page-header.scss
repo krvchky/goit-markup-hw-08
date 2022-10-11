@@ -4,7 +4,8 @@
   |============================
 */
 
-.link-current::after {
+
+.link.current::after {
     content: "";
     position: absolute;
     bottom: -1.5%;
@@ -60,6 +61,7 @@ span {
 .header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .navi {
@@ -73,11 +75,7 @@ span {
     @media screen and (min-width: 768px) {
             display: flex;
             gap: 50px;
-        }
-
-
-
-        
+        }  
     &__link {
             text-decoration: none;
     
@@ -91,7 +89,7 @@ span {
         }
 
 }
-.link-current {
+.link.current {
     color: var(--accent-color);
 }
 

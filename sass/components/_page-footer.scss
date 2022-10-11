@@ -123,7 +123,6 @@
     @media screen and (min-width:480px) {
         display: flex;
         align-items: center;
-        // justify-content: center;
     }
 
     @media screen and (min-width:768px){
@@ -146,7 +145,7 @@
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-between;
+    // justify-content: space-between;
     gap:60px;
 
     @media screen and (min-width:768px) {
@@ -186,8 +185,10 @@
 
 
 .footer-div {
-    // width: 100%;
 
+//   @media screen and (min-width:480px) and (max-width:1200px) {
+//     width: 450px;
+//   }
     &__icon-telegram {
             margin-left: 10px;
             fill: #FFFFFF;
@@ -255,8 +256,9 @@
     padding: 10px 29px;
     width: 200px;
     height: 50px;
-    @media screen and (min-width:480px) and (max-width:1199px) {
-        margin-top: 20px;
+    @media screen and (max-width:1199px) {
+        margin-top:20px;
+        
     }
     
 
@@ -269,10 +271,8 @@
     border-radius: 4px;
     color: #FFFFFF;
     border: none;
-
-        
-    
 }
+
 
 .footer-div__input {
     padding-top: 15px;
@@ -299,10 +299,11 @@
     transition-property: border-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and (min-width:480px) and (max-width:1199px) {
+        // margin-bottom: 20px;
+    }
     @media screen and (min-width:1200px) {
         width: 358px;
-        // margin-right: 12px;
-        // margin-bottom: 0;
     }
 
   
@@ -310,8 +311,9 @@
 }
 
 .footer-div__form {
+
     @media screen and (min-width:460px) and (max-width:1199px) {
-            display: flex;
+            // display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -322,3 +324,4 @@
 //         width: 450px;
 //     }
 // }
+
