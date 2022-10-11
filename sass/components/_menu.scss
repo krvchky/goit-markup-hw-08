@@ -79,7 +79,9 @@
 
 .menu-nav {
     margin-bottom: auto;
+
 }
+
 
 .menu-nav__link {
     list-style: none;
@@ -94,6 +96,10 @@
     
         margin-bottom: 0;
         color: #212121;
+
+        transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-property: color;
 }
 
 .menu-nav__link.link-current  {

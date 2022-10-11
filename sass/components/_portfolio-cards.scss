@@ -6,7 +6,9 @@
 
 .portfolio__reference {
     text-decoration: none;
-    display:block;
+    display:flex;
+    flex-direction: column;
+    height: 100%;
     transition-duration: 250ms;
     transition-property: box-shadow;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -46,6 +48,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
+    flex-grow: 1;
     padding-right: 24px;
     border: 1px solid rgba(238, 238, 238, 1);
 }
@@ -55,7 +58,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    // letter-spacing: 0.06em;
+    letter-spacing: 0.06em;
     color: var(--title-text-color);
     text-decoration: none;
 
